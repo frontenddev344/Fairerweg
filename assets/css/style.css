@@ -1,0 +1,50 @@
+.navbar > .container, .navbar > .container-fluid, .navbar > .container-sm, .navbar > .container-md, .navbar > .container-lg, .navbar > .container-xl, .navbar > .container-xxl {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.right_banner {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: gray;
+}
+.home_hotel_card {
+    background: red;
+    border-radius: 5px;
+    height: 550px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+}
+.h_resort {
+    background-image: url(../images/venetien_resort.jpg);
+}
+.h_Unterhaltung{
+ background-image: url(../images/penn_teller.jpg);
+}
+.h_Nachtleben{
+    background-image: url(../images/xsnight_club.jpg); 
+}
+.home_hotel_card p {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+.home_hotel_card::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: #000000ad;
+}
+.p_common{
+padding:60px 0;
+}
