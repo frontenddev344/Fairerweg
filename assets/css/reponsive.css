@@ -18,6 +18,15 @@
 		margin-top: 20px;
 		justify-content: center;
 	}
+	.left_hotel h2 {
+		font-size: 22px;
+	}
+	.left_hotel h3 {
+		font-size: 20px;
+	}
+	.left_hotel h6 {
+		font-size: 16px;
+	}
 }
 @media screen and (max-width: 991px){
     .top_footer {
@@ -31,6 +40,41 @@
 	.footer_left ul li {
 		margin-bottom: 20px;
 		margin-right: 0;
+	}
+	.right_info img {
+		height: 360px;
+	}
+
+	
+
+	.about_us_section .index_row_clr:nth-child(3){
+		flex-direction: column-reverse;
+	} 
+	.navbar > .container, .navbar > .container-fluid, .navbar > .container-sm, .navbar > .container-md, .navbar > .container-lg, .navbar > .container-xl, .navbar > .container-xxl {
+
+		flex-direction: row;
+	}
+	.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+li.nav-item {
+    margin: 10px 0px;
+}
+.hotels_section img {
+    width: 100%;
+}
+.navbar-brand img {
+    margin-bottom: 0;
+}
+
+}
+@media screen and (max-width:767px){
+	.navbar-brand img {
+		margin-bottom: 0;
+		max-width: 130px;
 	}
 }
 
