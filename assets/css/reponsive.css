@@ -61,7 +61,7 @@
     box-shadow: none;
 }
 li.nav-item {
-    margin: 10px 0px;
+	margin-bottom: 15px;
 }
 .hotels_section img {
     width: 100%;
@@ -69,12 +69,22 @@ li.nav-item {
 .navbar-brand img {
     margin-bottom: 0;
 }
+.navbar-nav .nav-item:first-child {
+    margin-top: 20px;
+}
+li.nav-item .nav-link {
+    font-size: 16px;
+
+}
 
 }
 @media screen and (max-width:767px){
 	.navbar-brand img {
 		margin-bottom: 0;
-		max-width: 130px;
+		max-width: 120px;
+	}
+	.right_banner h1 {
+		font-size: 32px;
 	}
 }
 
