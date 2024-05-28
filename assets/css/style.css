@@ -19,6 +19,7 @@ background-image: url(../images/bg_design.jpg);
 background-size: cover;
 background-repeat: no-repeat;
 background-position: center;
+background-attachment: fixed;
 }
 .right_banner {
     height: 100%;
@@ -106,7 +107,7 @@ padding:60px 0;
     margin-bottom: 40px;
 }
 li.nav-item .nav-link {
-    font-size: 18px;
+    font-size: 16px;
     text-transform: uppercase;
     font-weight: 500;
     color: #000;
@@ -330,7 +331,7 @@ color: #c3a165;
     font-size: 18px;
     margin-bottom: 15px;
     color: #000;
-    font-weight: 800;
+    font-weight: 600;
 }
 
 .left_hotel {
@@ -445,4 +446,19 @@ button.accordion-button {
 .right_about_us h2 {
     display: inline-block;
     border-bottom: 2px solid #c3a165;
+}
+.accordion-button:focus {
+    box-shadow: unset;
+}
+.right_about_us p {
+    color: #666666;
+}
+.left_info p {
+    color: #666666;
+}
+.left_info {
+    border: 1px solid #c3a165;
+    text-align: left;
+    padding: 20px 10px;
+    border-right: unset;
 }
