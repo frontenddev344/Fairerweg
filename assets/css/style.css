@@ -113,7 +113,7 @@ li.nav-item .nav-link {
     transition: all 0.4s;
 }
 .index_row_clr {
-    background: #F1F1F2;
+    background: #f8f5f0;
 }
 .right_about_us {
     padding: 20px;
@@ -433,4 +433,16 @@ button.accordion-button {
 .right_info:hover::before {
 	-webkit-animation: circle .75s;
 	animation: circle .75s;
+}
+
+.form-control:focus {
+    color: #000;
+    background-color: unset;
+    border-color: #00000024;
+    outline: 0;
+    box-shadow: unset;
+}
+.right_about_us h2 {
+    display: inline-block;
+    border-bottom: 2px solid #c3a165;
 }
