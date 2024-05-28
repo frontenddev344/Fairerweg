@@ -41,6 +41,7 @@ background-position: center;
     background-repeat: no-repeat;
     background-position: center center;
     position: relative;
+    transition: all 0.4s;
 }
 .h_resort {
     background-image: url(../images/venetien_resort.jpg);
@@ -123,6 +124,7 @@ li.nav-item .nav-link {
     text-decoration: none;
     color: #fff;
     text-transform: capitalize;
+    transition: all 0.4s;
 }
 .footer_left ul {
 	display: flex;
@@ -346,4 +348,64 @@ button.accordion-button {
     background-color: #ccaf7c;
     box-shadow: unset;
 }
+.navbar-brand:focus-visible{
+    outline: unset;
+}
+.button_cls:hover {
+    background: #fff;
+    color: #c3a165;
+    border: 1px solid #c3a165;
+}
+.home_hotel_card:hover {
+    filter: grayscale(1);
+}
+.left_about_us {
+    position: relative;
+    overflow: hidden;
 
+}
+.left_about_us::before {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 2;
+	display: block;
+	content: '';
+	width: 0;
+	height: 0;
+	background: rgba(255,255,255,.2);
+	border-radius: 100%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	opacity: 0;
+}
+.left_about_us:hover::before {
+	-webkit-animation: circle .75s;
+	animation: circle .75s;
+}
+@-webkit-keyframes circle {
+	0% {
+		opacity: 1;
+	}
+	40% {
+		opacity: 1;
+	}
+	100% {
+		width: 200%;
+		height: 200%;
+		opacity: 0;
+	}
+}
+@keyframes circle {
+	0% {
+		opacity: 1;
+	}
+	40% {
+		opacity: 1;
+	}
+	100% {
+		width: 200%;
+		height: 200%;
+		opacity: 0;
+	}
+}
