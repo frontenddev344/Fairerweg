@@ -94,10 +94,8 @@ padding:60px 0;
 }
 .right_info img {
     object-fit: cover;
-    height: 380px;
     width: 100%;
-    border-right: 10px solid #c3a165;
-    border-bottom: 10px solid #c3a165;
+    height: 300px;
 }
 .right_info{
     text-align: right;
@@ -438,9 +436,14 @@ button.accordion-button {
 .left_info p {
     color: #666666;
 }
+
+.direction_change_row {
+    flex-direction: row-reverse;
+}
+.none_index_row {
+    background: #fff!important;
+    box-shadow: 0 0 30px rgba(32, 32, 32, 0.15);
+}
 .left_info {
-    border: 1px solid #c3a165;
-    text-align: left;
     padding: 20px 10px;
-    border-right: unset;
 }
