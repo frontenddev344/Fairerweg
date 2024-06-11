@@ -238,7 +238,7 @@ footer .footer_rightul li a {
 
 
 .footer_right ul li a:hover {
-	transform: rotate(360deg);
+    transform: scale(1.2);
 }
 .hotels_section .container .row:nth-child(2) {
     flex-direction: row-reverse;
