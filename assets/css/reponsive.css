@@ -83,6 +83,9 @@ li.nav-item .nav-link {
 	flex-direction: column-reverse!important;
 
 }
+.resort_infos .row {
+    flex-direction: column-reverse!important;
+}
 
 }
 @media screen and (max-width:767px){
