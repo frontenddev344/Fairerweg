@@ -79,6 +79,10 @@ li.nav-item .nav-link {
 .left_info{
 	border:unset;
 }
+.hotels_section .row{
+	flex-direction: column-reverse!important;
+
+}
 
 }
 @media screen and (max-width:767px){
