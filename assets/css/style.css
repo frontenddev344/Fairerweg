@@ -447,3 +447,6 @@ button.accordion-button {
 .left_info {
     padding: 20px 10px;
 }
+.terms_content p a {
+    color: #000;
+}
