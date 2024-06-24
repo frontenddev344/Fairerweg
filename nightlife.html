@@ -79,7 +79,7 @@
   </div>
 
 
-  <div class="resort_infos"  data-aos="fade-down">
+  <!-- <div class="resort_infos"  data-aos="fade-down">
     <div class="container">
         <div class="row index_row_clr none_index_row">
             <div class="col-lg-7">
@@ -147,8 +147,76 @@
         </div>
      
     </div>
-  </div>
+  </div> -->
   
+
+  <div class="resort_info_new" data-aos="zoom-in">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 ">
+                <div id="readmore">
+                    <div class="readmore__content">
+                        <div class="row index_row_clr none_index_row">
+                            <div class="col-12">
+                                <div class="left_info">
+                                    <p>Machen Sie sich bereit für die elektrisierende Energie und Atmosphäre des legendären
+                                      Nachtlebens der Stadt. Von hektischen Tanzflächen bis hin zu intimen Lounges bietet Las
+                                      Vegas Nachtlebenserlebnisse, die für jeden Geschmack und jede Vorliebe etwas bieten.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row index_row_clr direction_change_row none_index_row">
+                            <div class="col-12">
+                                <div class="left_info">
+                                    <p>Beginnen Sie Ihre Reise, während wir Sie zu den besten Ausgehzielen in Las Vegas führen.
+                                      Ganz gleich, ob Sie die rasante Spannung von Weltklasse-Nachtclubs oder die Eleganz von
+                                      Dachlounges suchen, Sie werden alles vor der atemberaubenden Kulisse des Las Vegas
+                                      Strip finden.</p>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row index_row_clr none_index_row">
+                            <div class="col-12">
+                                <div class="left_info">
+                                    <p>Vom ultimativen VIP-Erlebnis an exklusiven Hotspots, die von Prominenten frequentiert
+                                      werden, bis hin zum ansteckenden Trubel von Top-DJs und Live-Auftritten. Mit ikonischen
+                                      Veranstaltungsorten, modernsten Soundsystemen, atemberaubendem Design und Service
+                                      auf höchstem Niveau verspricht Las Vegas ein unvergessliches Nachtleben-Abenteuer wie
+                                      kein anderes.</p>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="row index_row_clr none_index_row">
+                          <div class="col-12">
+                              <div class="left_info">
+                                  <p>Erkunden Sie mit uns die berühmtesten Ausgehziele der Stadt, wo die Party nie aufhört und
+                                    die Erinnerungen ein Leben lang anhalten. Machen Sie sich bereit, bis zum Morgengrauen
+                                    zu tanzen und erleben Sie die Magie des Nachtlebens von Las Vegas in seiner ganzen
+                                    Pracht.</p>
+
+                              </div>
+                          </div>
+
+                      </div>
+                    </div>
+                    <button class="readmore__toggle" role="switch" aria-checked="true">
+                        Zeig mehr
+                    </button>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
 
 
   <div class="hotels_section p_common" data-aos="zoom-in">
@@ -525,6 +593,63 @@
     duration: 1200,
   })
   </script>
+
+<script>
+  class readMore {
+      constructor() {
+          this.content = '.readmore__content';
+          this.buttonToggle = '.readmore__toggle';
+      }
+
+      bootstrap() {
+          this.setNodes();
+          this.init();
+          this.addEventListeners();
+      }
+
+      setNodes() {
+          this.nodes = {
+              contentToggle: document.querySelector(this.content)
+          };
+
+          this.buttonToggle = this.nodes.contentToggle.parentElement.querySelector(this.buttonToggle);
+      }
+
+      init() {
+          const { contentToggle } = this.nodes;
+
+          this.stateContent = contentToggle.innerHTML;
+
+          contentToggle.innerHTML = `${this.stateContent.substring(0, 500)}...`;
+      }
+
+      addEventListeners() {
+          this.buttonToggle.addEventListener('click', this.onClick.bind(this))
+      }
+
+      onClick(event) {
+          const targetEvent = event.currentTarget;
+          const { contentToggle } = this.nodes
+
+          if (targetEvent.getAttribute('aria-checked') === 'true') {
+              targetEvent.setAttribute('aria-checked', 'false')
+              contentToggle.innerHTML = this.stateContent;
+              this.buttonToggle.innerHTML = 'Show less'
+
+          } else {
+              targetEvent.setAttribute('aria-checked', 'true')
+              contentToggle.innerHTML = `${this.stateContent.substring(0, 500)}...`
+              this.buttonToggle.innerHTML = 'Show more'
+          }
+      }
+  }
+
+
+  const initReadMore = new readMore();
+  initReadMore.bootstrap()
+</script>
+
+
 </body>
 
 </html>
