@@ -466,6 +466,8 @@ button.accordion-button {
     transition: all 0.4s;
     border: unset;
     border: 1px solid transparent;
+    margin: 0 auto;
+    display: block;
   }
   button.readmore__toggle:hover{
     background: #fff;
