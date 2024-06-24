@@ -450,3 +450,29 @@ button.accordion-button {
 .terms_content p a {
     color: #000;
 }
+
+
+.readmore__content {
+    width: 100%;
+    color: #666666;
+  }
+  
+  button.readmore__toggle {
+    background: #c3a165;
+    padding: 10px 22px;
+    text-decoration: none;
+    color: #fff;
+    text-transform: capitalize;
+    transition: all 0.4s;
+    border: unset;
+    border: 1px solid transparent;
+  }
+  button.readmore__toggle:hover{
+    background: #fff;
+    color: #c3a165;
+    border: 1px solid #c3a165;
+  }
+
+  .none_index_row {
+    margin-bottom: 30px;
+}
